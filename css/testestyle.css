@@ -1,0 +1,657 @@
+/*CSS UNIVERSAL PARA TODA A PÁGINA*/
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Sigmar&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+  }
+  
+  /*CSS DO MENU HORIZONTAL*/
+  header{
+    width: 100%;
+   height: auto;
+   position: absolute;
+   margin-bottom: 30px;
+   position: fixed;
+   z-index: 9999;
+  }
+  #menu-h  {
+    background-color:#000000;
+    margin-bottom: 3px;
+  }
+
+  #menu-h ul{
+    margin-left: 20px;
+    max-width: 20%;
+    padding: 5;
+    display: inline;
+    
+  }
+
+  #menu-h ul li {
+    display: inline;
+    width: 50px;
+  }
+
+  #menu-h ul li img{
+    height: 30px; 
+    width: 30px;
+    margin: top 0;
+    margin-bottom: 0;
+    padding: 0;
+    margin-left: 10px;
+    
+  }
+  .group {
+    display: inline-block;
+    line-height: 30px;
+    align-items: center;
+    position: relative;
+    max-width: 450px;
+  
+   }
+   
+   .input {
+    width: 550px;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    margin-bottom: 10px;
+    margin-left: 70px;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    float: center;
+    border-color:#000000;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px#666665;
+    
+   }
+   
+   .icon {
+    position: absolute;
+    left: 5rem;
+    fill: #9e9ea7;
+    width: 2rem;
+    height: 1rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+   }   
+
+ 
+  
+   li a, .dropbtn {
+    font-family: 'Oswald', sans-serif;
+    display: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #666665;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #494949;
+    min-width: 40px;
+    box-shadow: 0px 8px 16px 0px #ff6a32(255, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: 250px;
+
+  }
+  
+  .dropdown-content a {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #e8d1d1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  #menu-h ul li a {
+   
+    font-family: 'Share Tech', sans-serif;
+    font-size: 28px;
+    color:#ff7300f1;
+    padding:15px;
+    margin: 0%;
+    margin-bottom: 0;   
+    margin-top: 0; 
+    display: inline-block;
+    text-decoration: none;
+    transition: background .8s;
+  }
+  h1{
+    font-family: 'Share Tech', sans-serif;
+    font-size: 28px;
+    color:#ffffff;
+  }
+  h2{
+    font-family: 'Share Tech', sans-serif;
+    font-size: 20px;
+    color:#ffffff;
+  }
+  
+  #menu-h ul li a:hover {
+    background-color:#444444;
+  }
+  
+  #menu-h ul li:last-child a {
+   margin-top: 3px;
+   margin-right: 20px;
+   margin-left: 3px;
+   margin-bottom: auto;
+    float: right;
+    background-color:#f5f2f1;
+  }
+
+  body{
+  background-color: #201f1f;
+  height: 100%; 
+  width: 100%;
+
+}
+
+ 
+
+/* CSS IMAGEM
+.banner{
+  background-image: url("./estilo.css");
+  height: 90%;
+  width: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative ;
+  margin-top: 80px;
+  margin-left: 300px;
+} */
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  height: 550px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+ display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*CSS CATEGORIAS*/
+
+.categorias {
+  width:150px;
+  height:150PX;
+  border: #f2f2f2;
+  border-radius: 100%;
+ float: left;
+ margin: 60px;
+  background-color: #ff6a32;
+  text-align: center;
+ }
+ .categorias a{
+  text-decoration: none;
+  color: #ffff;
+ }
+ .categorias h1{
+  text-decoration: none;
+
+  padding: 30px;
+  margin-top: 26px;
+ }
+ 
+
+ /* banner */
+ .section-chamada  { padding:0em 0; background-color:#444444; }
+.section-chamada .content { width:100%; padding:0; margin:0; }
+.topoPag                 { width:100%; height:100%; background-color:transparent; float:left; position:relative; overflow:hidden; transition:all 500ms; -moz-transition:all 500ms; -ms-transition:all 500ms; -o-transition:all 500ms; -webkit-transition:all 500ms;}
+.topoPag .mascara        { overflow:hidden; position:relative; }
+.topoPag .centraliza     { width: 90%; height:auto; top:26%; position:relative; margin:0 5%; }
+.topoPag  img            { width:95%;  margin-bottom: 10px; margin-top:100px; position:relative;}
+
+/*Chamada*/
+.section-chamada  { padding:0em 0;background-color: #201f1f; }
+.section-chamada .content { width:100%; padding:0; margin:0;  }
+.topoPag                 { width:100%; height:100%; background-color:transparent; float:left; position:relative; overflow:hidden; transition:all 500ms; -moz-transition:all 500ms; -ms-transition:all 500ms; -o-transition:all 500ms; -webkit-transition:all 500ms;}
+.topoPag .mascara        { overflow:hidden; position:relative; }
+.topoPag .centraliza     { width: 90%; height:auto; top:26%; position:absolute; margin:0 5%; }
+.topoPag  img            { width:100%; margin-top: 10px; }
+.topoPag .centraliza h1  { width: 100%; font-size:2em; float:left; text-align:center; font-family: 'Lato', sans-serif; text-shadow: 2px 1px 5px #535353;}
+.topoPag .centraliza p   { width:100%; font-size:1em; float:left; text-align:center; font-family: 'Lato', sans-serif; }
+.topoPag .centraliza p b { display:none; }
+
+ 
+/* fim banner */
+
+
+
+/*CSS DO BANNER*/
+
+  .card {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(53, 52, 52, 0.603);
+    max-width: 300px;
+ 
+    padding:5%;
+    background-color: #2c2b2b;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color:#ffffff;
+    font-size: 32px;
+  }
+  
+  .card button  {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color:#000000;
+    background-color: #ffffffb0;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+   .card audio {
+    position: relative;
+    box-shadow: 0 4px 8px 0 #ff6a32;
+    max-width: 250px;
+    margin: 0px;
+    padding:5%;
+    text-align: left;
+  
+
+  }
+  
+  .card button:hover {
+    opacity: 0.4;
+  }
+  .column {
+margin-top: 100px;
+    float: left;
+    width: 25%;
+    padding: 40px 40px;
+    text-align: center;
+   
+    
+  }
+  .column img{
+    border-radius: 5%;
+    width: 100px;
+    padding: 15px;
+    
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  
+  }
+  .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+  
+  }
+  .card p{
+    color: #fff;
+  }
+
+  /*CSS DO FORM Entrar ou login*/
+  .espaco{
+    position: relative;
+      width: 100%;
+    }
+    /* essa é a classe onde agrupa todos os elementos do foms, definindo
+    largura, altura, sombra, borda, recuo, margem, background, gap e o display*/
+    .form_container {
+      margin-top: 80px;
+      margin-bottom: 50px;
+      position: relative;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      gap: 15px;
+      padding: 50px 40px 20px 40px;
+      background-color: #ffffff;
+      -webkit-box-shadow: 0px 106px 42px rgba(0, 0, 0, 0.01),
+        0px 59px 36px rgba(0, 0, 0, 0.05), 0px 26px 26px rgba(0, 0, 0, 0.09),
+        0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 106px 42px rgba(0, 0, 0, 0.01),
+        0px 59px 36px rgba(0, 0, 0, 0.05), 0px 26px 26px rgba(0, 0, 0, 0.09),
+        0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 11px;
+      font-family: "Inter", sans-serif;
+      position: relative;
+    }
+    /* essa classe define atributos borda, tamanho, margem, sombra do logotipo */
+    .logo_container {
+      margin-bottom:50px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 100px;
+      height: 100px;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(248, 248, 248, 0)), to(#F8F8F888));
+      background: linear-gradient(180deg, rgba(248, 248, 248, 0) 50%, #F8F8F888 100%);
+      border: 1px solid #F7F7F8;
+      -webkit-filter: drop-shadow(0px 0.5px 0.5px #EFEFEF) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+              filter: drop-shadow(0px 0.5px 0.5px #EFEFEF) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+      border-radius: 11px;
+    }
+  
+    /* aqui está chamando o elemento IMG do HTML e definindo tamanho e posição */
+    .logo_container img{
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+    /* esta classe está definindo o display e gap do título do container */
+    .title_container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      gap: 10px;
+    }
+    /* esta classe configura a margem, tamanho, grossura e cor da 
+    fonte do título */
+    .title {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #4C3434;
+    }
+    /* esta classe configura a margem, tamanho, grossura e cor da 
+    fonte do subtítulo */
+    .subtitle {
+      font-size: 0.725rem;
+      max-width: 80%;
+      text-align: center;
+      line-height: 1.1rem;
+      color: #E69760;
+    }
+  
+    .sign-in_btn {
+      width: 100%;
+      height: 40px;
+      border: 0;
+      background: #ff6a32;
+      border-radius: 7px;
+      outline: none;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .sign-in_ggl {
+      width: 100%;
+      height: 40px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      gap: 10px;
+      background: #ff6a32;
+      border-radius: 7px;
+      outline: none;
+      color: #ffffff;
+      border: 1px solid #e5e5e5;
+      -webkit-filter: drop-shadow(0px 1px 0px #efefef)
+        drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+              filter: drop-shadow(0px 1px 0px #efefef)
+        drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+      cursor: pointer;
+    }
+    
+    .sign-in_apl {
+      width: 100%;
+      height: 40px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      gap:200px;
+      background: #4C3434;
+      border-radius: 7px;
+      outline: none;
+      color: #ffffff;
+      border: 1px solid #e5e5e5;
+      -webkit-filter: drop-shadow(0px 1px 0px #efefef)
+        drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+              filter: drop-shadow(0px 1px 0px #efefef)
+        drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+      cursor: pointer;
+    }
+    
+    .separator {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      gap: 30px;
+      color: #8B8E98;
+    }
+    
+    .separator .line {
+      display: block;
+      width: 100%;
+      height: 1px;
+      border: 0;
+      background-color: #e8e8e8;
+    }
+    
+    .note {
+      font-size: 0.75rem;
+      color: #8B8E98;
+      text-decoration: underline;
+    }
+    
+   /*stilo player music*/ 
+   .card audio {
+    position: relative;
+    /* box-shadow: 0 4px 8px 0 #ff6a32; */
+    max-width: 250px;
+    margin: 0px;
+    padding: 5%;
+    text-align: left;
+}
+  iframe{
+    margin-left: 200px;
+   
+  }
+    .linha{
+      width: 100%;
+      height: auto;
+      margin-bottom: 40px;
+      margin-left: 50px;
+    }
+    
+        
+
+ 
+  /* Inicio do rodapé */
+footer {
+  background: linear-gradient(#2c2b2b 0%,#000000 100%);
+ 
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+
+}
+footer img{
+  margin-top: 5px;
+  margin-left: 600px;
+  float:center;
+  padding:auto;
+ 
+  height: 20%;
+  width: 20%;
+  bottom: 0%;
+}
+footer p{
+  margin-top: 40px;
+  margin-right: 820PX;
+  float:right;
+  align-items: center;
+  width: auto; 
+  bottom: 0%;
+  color: #8b8b8b;
+}
+
+/* fim do rodapé */
+
+ 
+
+

@@ -1,0 +1,368 @@
+/*CSS UNIVERSAL PARA TODA A PÁGINA*/
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Sigmar&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+  }
+  
+  /*CSS DO MENU HORIZONTAL*/
+  header{
+    width: 100%;
+   height: auto;
+   position: absolute;
+   margin-bottom: 30px;
+   position: fixed;
+   z-index: 9999;
+  }
+  #menu-h {
+    background-color:#fd0000;
+    margin-bottom: 3px;
+  }
+
+  #menu-h ul {
+    margin-left: 20px;
+    max-width: 20%;
+    padding: 5;
+    display: inline;
+  }
+
+  #menu-h ul li {
+    display: inline;
+    width: 50px;
+  }
+
+  #menu-h ul li img{
+    height: 30px; 
+    width: 30px;
+    margin: top 0;
+    margin-bottom: 0;
+    padding: 0;
+    margin-left: 10px;
+    
+  }
+  .group {
+    display: inline-block;
+    line-height: 30px;
+    align-items: center;
+    position: relative;
+    max-width: 450px;
+  
+   }
+   
+   .input {
+    width: 550px;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    margin-bottom: 10px;
+    margin-left: 70px;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    float: center;
+    border-color:#000000;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px#666665;
+    
+   }
+   
+   .icon {
+    position: absolute;
+    left: 5rem;
+    fill: #9e9ea7;
+    width: 2rem;
+    height: 1rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+   }   
+  
+  #menu-h ul li a {
+   
+    font-family: 'Share Tech', sans-serif;
+    font-size: 28px;
+    color:hsla(27, 100%, 50%, 0.945);
+    padding:15px;
+    margin: 0%;
+    margin-bottom: 0;   
+    margin-top: 0; 
+    display: inline-block;
+    text-decoration: none;
+    transition: background .8s;
+  }
+  h1{
+    font-family: 'Share Tech', sans-serif;
+    font-size: 28px;
+    color:#ffffff;
+  }
+  h2{
+    font-family: 'Share Tech', sans-serif;
+    font-size: 20px;
+    color:#ffffff;
+  }
+  
+  #menu-h ul li a:hover {
+    background-color:#444444;
+  }
+  
+  #menu-h ul li:last-child a {
+   margin-top: 3px;
+   margin-right: 20px;
+   margin-left: 3px;
+   margin-bottom: auto;
+    float: right;
+    background-color:#000000;
+  }
+
+  body{
+  background-color: #201f1f;
+  height: 100%; 
+  width: 100%;
+
+}
+
+ 
+
+/* CSS IMAGEM */
+.banner{
+  background-image: url("./estilo.css");
+  height: 90%;
+  width: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative ;
+  margin-top: 80px;
+  margin-left: 300px;
+}
+
+.categorias {
+  width: 100px;
+  height: 100px;
+  border: #f2f2f2;
+  border-radius: 100%;
+  color: red;
+  background-color: red;
+ }
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  height: 550px;
+  position: relative;
+  margin: auto;
+  
+  margin-top:100px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display:none;
+ }
+.fade {
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*CSS DO BANNER*/
+
+  .card {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(53, 52, 52, 0.603);
+    max-width: 300px;
+ 
+    padding:5%;
+    background-color: #2c2b2b;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color:#ffffff;
+    font-size: 32px;
+  }
+  
+  .card button  {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color:#000000;
+    background-color: #ffffffb0;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+   .card audio {
+    position: relative;
+    box-shadow: 0 4px 8px 0 #ff6a32;
+    max-width: 250px;
+    margin: 0px;
+    padding:5%;
+    text-align: left;
+  
+
+  }
+  
+  .card button:hover {
+    opacity: 0.4;
+  }
+  .column {
+
+    float: left;
+    width: 25%;
+    padding: 40px 40px;
+    text-align: center;
+   
+    
+  }
+  .column img{
+    border-radius: 5%;
+    width: 100px;
+    padding: 15px;
+    
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  
+  }
+  .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+  
+  }
+  .card p{
+    color: #fff;
+  }
+ 
+  
+  /* Inicio do rodapé */
+footer {
+  background: linear-gradient(#2c2b2b 0%,#000000 100%);
+ 
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+}
+footer img{
+  margin-top: 5px;
+  margin-left: 730px;
+  float:center;
+  padding:auto;
+ 
+  height: 20%;
+  width: 20%;
+  bottom: 0%;
+}
+footer p{
+  margin-top: 40px;
+  margin-right: 820PX;
+  float:right;
+  width: auto; 
+  bottom: 0%;
+  color: #8b8b8b;
+}
+
+/* fim do rodapé */
+
+ 
+
+
